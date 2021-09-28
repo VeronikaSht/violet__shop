@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+
+    .container {
+        width: 1300px;
+        margin: 0 auto;
+    }
+
+    .header {
+        font-size: 18px;
+        font-family: 'Italianno';
+
+        &__inner {
+            width: 100%;
+            height: 100px;
+            background-color: #ffb8de;
+            display: flex;
+            justify-content: space-between;
+
+            &__logo {
+                padding: 30px 0 30px 70px;
+                width: 200px;
+                // transform: rotate(270deg);
+
+                &:last-child {
+                    transform: rotate(180deg);
+                    padding: 30px 0 30px 70px;
+                }
+            }
+        }
+    }
+
+    .menu {
+        margin-top: 30px;
+        
+        &__catalog {
+            display: flex;
+            justify-content: space-between;
+
+            &--item {
+                color: #2f2f2f;
+                font-size: 16px;
+                font-family: 'Comfortaa';
+                font-weight: 700;
+
+                &:first-child {
+                    padding-left: 90px;
+                }
+
+                &:last-child {
+                    padding-right: 90px;
+                }
+            }
+        }
+
+        hr {
+            margin-top: 30px;
+            background-color: #fbd6ea;
+            // width: 140px;
+            height: 3px;
+        }
+    }
+
+    .standarts {
+        margin-top: 30px;
+
+        &__catalog {
+            display: flex;
+            justify-content: space-between;
+
+            &--item {
+                color: #2f2f2f;
+                font-size: 25px;
+                font-family: 'Comfortaa';
+                font-weight: 700;
+                text-align: center;
+                
+                padding-top: 10px;
+
+                background-image: url(../imgs/violet.jpg);
+                background-size: 270px;
+                height: 100px;
+                width: 270px;
+                background-repeat: no-repeat;
+
+                border-radius: 10px;
+                transition: .6s;
+                
+                &:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                    transition: .6s;
+                }
+            }
+        }
+    }
+
+    .about {
+        margin-top: 40px;
+        background-color: #fff;
+
+        h2 {
+            font-size: 80px;
+            font-family: 'Comfortaa';
+            color: #2f2f2f;
+            text-align: center;
+        }
+
+        &__inner {
+            margin-top: 40px;
+            display: flex;
+
+            &__contacts {
+                
+                h3 {
+                    font-size: 30px;
+                    font-family: 'Comfortaa';
+                    font-weight: 700;
+                    margin-top: 100px;
+                    text-align: start;
+                }
+
+            }
+
+            a {
+                color: #0026ff;
+                font-size: 16px;
+                font-family: 'Comfortaa';
+                font-weight: 700;
+            }
+
+            &__blocks {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 80px;  
+                width: 80%;
+                height: 120px;
+            }
+
+            &__phone--img {
+                width: 40px;
+                margin: 0px 30px 10px 0px;
+            }
+
+            &__mail--img {
+                width: 40px;
+                margin-right: 30px;
+                margin-top: 0;
+            }
+
+            &__location--img {
+                width: 40px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            &__phone--block {
+                display: flex;        
+            }
+
+            &__mob--item {
+                margin-bottom: 10px;
+            }
+
+            &__mail--block {
+                margin-left: 50px;
+                display: flex;
+
+                a {
+                    padding-top: 15px;
+                }
+
+            }
+
+            &__location--block {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Comfortaa';
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+            }
+
+            &__delivery {
+                margin-left: 100px;
+
+                h3 {
+                    font-size: 30px;
+                    font-family: 'Comfortaa';
+                    font-weight: 700;
+                    margin-top: 100px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Comfortaa';
+                    font-weight: 700;
+                    margin-top: 35px;
+                }
+
+                &--blocks {
+                    margin-top: 50px;
+                    display: flex;
+                }
+
+                &--img {
+                    width: 100px;
+                    margin-right: 30px;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    body {
+
+        .menu {
+            margin-top: 30px;
+            
+            &__catalog {
+                display: flex;
+                justify-content: space-between;
+    
+                &--item {
+                    color: #2f2f2f;
+                    font-size: 16px;
+                    font-family: 'Comfortaa';
+                    font-weight: 700;
+    
+                    &:first-child {
+                        padding-left: 170px;
+                    }
+    
+                    &:last-child {
+                        padding-right: 180px;
+                    }
+                }
+            }
+        }
+
+        .standarts {
+            margin-top: 30px;
+    
+            &__catalog {
+                display: flex;
+                justify-content: space-around;
+    
+                &--item {
+                    color: #2f2f2f;
+                    font-size: 25px;
+                    font-family: 'Comfortaa';
+                    font-weight: 700;
+                    text-align: center;
+                    
+                    padding-top: 10px;
+    
+                    background-image: url(../imgs/violet.jpg);
+                    background-size: 270px;
+                    height: 100px;
+                    width: 220px;
+                    background-repeat: no-repeat;
+    
+                    border-radius: 10px;
+                    transition: .6s;
+                    
+                    &:hover {
+                        transform: scale(1.2);
+                        cursor: pointer;
+                        transition: .6s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    
+}
