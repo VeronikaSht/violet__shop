@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <title>Каталог</title>
+</head>
+<body>
+        <div class="header">
+        <div class="header__inner container">
+            <!-- <img class="header__inner__logo" src="imgs/violet__logo.png" alt="logo">
+            <img class="header__inner__logo" src="imgs/violet__logo.png" alt="logo"> -->
+            
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu__inner container">
+
+            <ul class="menu__catalog">
+                <li class="menu__catalog--item">
+                    <a href="catalog.html">Каталог</a> 
+                </li>
+                <li class="menu__catalog--item">Доставка и оплата</li>
+                <!-- <li class="menu__catalog--item"></li>
+                <li class="menu__catalog--item"></li>
+                <li class="menu__catalog--item"></li> -->
+                <li class="menu__catalog--item">Корзина</li>
+            </ul>
+
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="standarts">
+        <div class="standarts__inner container">
+
+            <ul class="standarts__catalog">
+                <li class="standarts__catalog--item">
+                    <p>Стандарты зарубежной <br> селекции</p>
+                </li>
+
+                <li class="standarts__catalog--item">
+                    <p>Стандарты <br> селекции <br> Украины</p>
+                </li>
+
+                <li class="standarts__catalog--item">
+                    <p>Стандарты <br> селекции <br> стран СНГ</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+    <div class="catalog">
+        <div class="catalog__inner container">
+
+            <div class="selection">
+    
+                <form class="selection__form" action="">
+                    <div class="selection__form--block">
+                        <input name="name" placeholder="Название" type="text">
+    
+                        <select class="type" name="type">
+                            <option value="default">Тип цветка</option>
+                            <option value="simple">Простой</option>
+                            <option value="double">Махровый</option>
+                            <option value="semidouble">Полумахровый</option>
+                        </select>
+    
+                        <select class="color" name="color">
+                            <option value="default">Основной цвет</option>
+                            <option value="white">Белый</option>
+                            <option value="pink">Розовый</option>
+                            <option value="green">Зеленый</option>
+                            <option value="blue">Голубой</option>
+                            <option value="purple">Фиолетовый</option>
+                        </select>
+    
+                        <select class="leaf" name="leaf">
+                            <option value="dafault">Листья</option>
+                            <option value="simple">Простые</option>
+                            <option value="motley">Пестрые</option>
+                            <option value="girl">Girl-листва</option>
+                        </select>
+                        
+                        <div class="selection__form--block--btn">
+                            <input class="select" type="button" value="Применить">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        
+            <div class="products">
+
+                <div class="products__item">
+                    <h3>Название</h3>
+
+                    <img class="products__item--img" src="imgs/violet__name.jpg" alt="">
+
+                    <form class="products__item--buy" action="">
+                        <div class="products__item--buy--radio">
+                            <input type="radio" name="plant" id="child"> <label for="child">Детка</label>
+                        </div>
+                        <div class="products__item--buy--radio">
+                            <input type="radio" name="plant" id="leaf"> <label for="leaf">Лист</label>
+                        </div>
+
+                        <p class="products__item--buy--price">
+                            Цена
+                        </p>
+
+                        <div class="products__item--buy--btn">
+                            <input class="products__item--buy--submit" type="submit" value="В корзину">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
