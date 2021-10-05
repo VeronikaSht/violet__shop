@@ -191,6 +191,11 @@ body .products {
   margin-left: 80px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
 }
 
 body .products__item {
@@ -224,6 +229,14 @@ body .products__item--buy label {
   font-family: 'Comfortaa';
   font-weight: 700;
   color: #90004d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .products__item--buy label:hover {
+  cursor: pointer;
 }
 
 body .products__item--buy p {
@@ -254,6 +267,7 @@ body .products__item--buy--submit {
   font-family: 'Comfortaa';
   font-weight: 700;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 body .products__item--buy--submit:hover {
